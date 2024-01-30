@@ -1,0 +1,13 @@
+/* Home.css */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+  }
+  .selected {
+    background-color: lightblue !important; /* Ändere dies entsprechend deinen Vorlieben */
+  }
+

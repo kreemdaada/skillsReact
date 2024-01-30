@@ -1,0 +1,9 @@
+.slick-slider {
+    width: 80%; /* Passe die Breite nach Bedarf an */
+    margin: 0 auto; /* Zentriere den Slider */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px; /* Passe die Schriftgröße der Pfeile an */
+  }
