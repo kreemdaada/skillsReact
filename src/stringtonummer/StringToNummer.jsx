@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import InputTrasform from '../stringtonummer/InputTransform'
 const BinaryConverter = () => {
   // Zustände für Benutzereingabe und Binärergebnis
   const [inputText, setInputText] = useState('');
@@ -32,6 +32,7 @@ const BinaryConverter = () => {
 
   // Rendere die Komponente
   return (
+    
     <div>
       <label>
         Eingabe:
@@ -39,6 +40,7 @@ const BinaryConverter = () => {
       </label>
       <p>Binäres Ergebnis: {binaryResult}</p>
     </div>
+    
   );
 };
 

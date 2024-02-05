@@ -16,6 +16,7 @@ import Vehicle from './autobewegen/AutoBewegen';
 import NumObjList from './numobjectlist/NumObjList';
 import DuplicatesArray from './duplicate/DuplicatesArray';
 import StringToNummer from './stringtonummer/StringToNummer';
+import InputTransform from './stringtonummer/InputTransform';
 import MultiplicationTable from './displaymultiplication/MultiplicationTable';
 import BlogList from './bloglist/BlogList';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap styles
@@ -76,6 +77,7 @@ function App() {
       </>
       <Vehicle/>
       <DuplicatesArray/>
+      <InputTransform/>
     </Router>
   );
 
