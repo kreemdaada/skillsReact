@@ -13,13 +13,17 @@ import FormData from './formdata/FormData'
 import PhotoShopBild from './photoshop/PhotoShopBild';
 import ImageSlider from './imageslider/ImageSlider';
 import Vehicle from './autobewegen/AutoBewegen';
+import NumObjList from './numobjectlist/NumObjList';
 import DuplicatesArray from './duplicate/DuplicatesArray';
 import StringToNummer from './stringtonummer/StringToNummer';
 import MultiplicationTable from './displaymultiplication/MultiplicationTable';
-import 'bootstrap/dist/css/bootstrap.css';
 import BlogList from './bloglist/BlogList';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap styles
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScript
+
 
 function App() {
+  const nummerArray = [118,112,93,321,12,334,43,2,112,12,22]
   const my_blogs = [
     {
       id: 1,
@@ -34,6 +38,7 @@ function App() {
       author: 'Autor 2'
     }
   ];
+ 
 
   return (
     <Router>
@@ -48,8 +53,7 @@ function App() {
           <Route path="/FullHouse" element={<FullHouse />} />
           <Route path="/LandMass" element={<BestProduct />} />
           <Route path="/imageslider" element={<ImageSlider />} />
-
-
+          <Route path="/numobjlist" element={<NumObjList numbers={nummerArray} />} />
           <Route path="/stringtonummer" element={<StringToNummer />} />
 
         </Routes>
@@ -62,6 +66,7 @@ function App() {
       </div>
       <>
       <MultiplicationTable n={6} />
+      <NumObjList/>
       </>
       <>
       <FormData/>
@@ -73,6 +78,7 @@ function App() {
       <DuplicatesArray/>
     </Router>
   );
+
 }
 
 export default App;
