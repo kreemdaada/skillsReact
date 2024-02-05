@@ -14,6 +14,7 @@ import PhotoShopBild from './photoshop/PhotoShopBild';
 import ImageSlider from './imageslider/ImageSlider';
 import Vehicle from './autobewegen/AutoBewegen';
 import DuplicatesArray from './duplicate/DuplicatesArray';
+import StringToNummer from './stringtonummer/StringToNummer';
 import MultiplicationTable from './displaymultiplication/MultiplicationTable';
 import 'bootstrap/dist/css/bootstrap.css';
 import BlogList from './bloglist/BlogList';
@@ -47,6 +48,10 @@ function App() {
           <Route path="/FullHouse" element={<FullHouse />} />
           <Route path="/LandMass" element={<BestProduct />} />
           <Route path="/imageslider" element={<ImageSlider />} />
+
+
+          <Route path="/stringtonummer" element={<StringToNummer />} />
+
         </Routes>
         <br />
       </div>
