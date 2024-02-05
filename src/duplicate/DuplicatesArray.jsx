@@ -1,5 +1,6 @@
 import React from 'react';
 
+//
 const RemoveDuplicatesComponent = ({ inputArray }) => {
     const removeDuplicates = (array) => {
         const seen = new Set();
@@ -37,5 +38,6 @@ const inputArray = [1, 2, 3, 1, 4, 2, 5, 6, 3, 7];
 const App = () => {
     return <RemoveDuplicatesComponent inputArray={inputArray} />;
 };
+
 
 export default App;
