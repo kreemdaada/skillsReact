@@ -13,6 +13,7 @@ import FormData from './formdata/FormData'
 import PhotoShopBild from './photoshop/PhotoShopBild';
 import ImageSlider from './imageslider/ImageSlider';
 import Vehicle from './autobewegen/AutoBewegen';
+import DuplicatesArray from './duplicate/DuplicatesArray';
 import MultiplicationTable from './displaymultiplication/MultiplicationTable';
 import 'bootstrap/dist/css/bootstrap.css';
 import BlogList from './bloglist/BlogList';
@@ -64,6 +65,7 @@ function App() {
       <PhotoShopBild/>
       </>
       <Vehicle/>
+      <DuplicatesArray/>
     </Router>
   );
 }
