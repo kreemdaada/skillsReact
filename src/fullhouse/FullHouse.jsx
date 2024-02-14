@@ -13,16 +13,11 @@ function FullHouseChecker() {
       cardCounts[card] = (cardCounts[card] || 0) + 1;
     }
 
-    
     let hasPair = false;
     let hasThreeOfAKind = false;
 
     for (const count of Object.values(cardCounts)) {
-
-      if (count === 1) {
-
       if (count === 2) {
-
         hasPair = true;
       } else if (count === 3) {
         hasThreeOfAKind = true;
@@ -37,7 +32,9 @@ function FullHouseChecker() {
     setHand([...hand, newCard]);
     setNewCard(""); // Leere das Eingabefeld nach dem Hinzufügen
   };
-console.log(isFullHouse());
+
+  console.log(isFullHouse());
+
   return (
     <div>
       <h2>Full House Checker</h2>
@@ -51,7 +48,6 @@ console.log(isFullHouse());
       <button onClick={addCardToHand}>Add Card to Hand</button>
     </div>
   );
-}
 }
 
 export default FullHouseChecker;
