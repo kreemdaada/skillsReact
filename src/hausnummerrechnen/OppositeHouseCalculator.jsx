@@ -62,3 +62,4 @@ const OppositeHouseCalculator = () => {
 };
 
 export default OppositeHouseCalculator;
+//hausnummer 3 , Street length 10 *2 =20 -3 =17 +1 = 18 
