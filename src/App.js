@@ -18,6 +18,7 @@ import DuplicatesArray from './duplicate/DuplicatesArray';
 import StringToNummer from './stringtonummer/StringToNummer';
 import InputTransform from './stringtonummer/InputTransform';
 import ReversWord from './stringtonummer/ReverseWord';
+import OppositeHouseCalculator from './hausnummerrechnen/OppositeHouseCalculator';
 import MultiplicationTable from './displaymultiplication/MultiplicationTable';
 import BlogList from './bloglist/BlogList';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap styles
@@ -81,6 +82,7 @@ function App() {
       <DuplicatesArray/>
       <InputTransform/>
       <ReversWord/>
+      <OppositeHouseCalculator/>
     </Router>
   );
 
